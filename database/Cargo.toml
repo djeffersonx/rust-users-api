@@ -1,0 +1,15 @@
+[package]
+name = "database"
+version = "0.1.0"
+authors = ["matthewcobbing <matthewc@nandos.co.uk>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+models = { path = "../models" }
+refinery = { version = "0.3.0", features = ["postgres"]}
+postgres = "0.17.3"
+sqlx = { version = "0.3.5", features = [ "postgres" ] }
+sql-builder = "0.12.0"
+async-trait = "0.1.36"
